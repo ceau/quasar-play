@@ -77,6 +77,7 @@ export default {
       this.workingButton = setInterval(() => {
         this.progressBtn += parseInt(Math.random() * 12, 10)
         if (this.progressBtn >= 100) {
+          this.progressBtn = 100
           this.stopWorkButton()
         }
       }, 500)
